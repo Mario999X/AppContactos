@@ -24,6 +24,8 @@ public class AppController implements Initializable {
     @FXML
     private StackPane ventana;
 
+    private AppAnidadaController appAnidadaController;
+
     public AppController() {
     }
 
