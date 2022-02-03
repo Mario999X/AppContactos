@@ -2,15 +2,23 @@ package com.example.appcontactos;
 
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
+// CONTROLADOR VISTA PRINCIPAL
 public class AppController implements Initializable {
 
     private boolean desplegado;
@@ -25,6 +33,7 @@ public class AppController implements Initializable {
     private StackPane ventana;
 
     private AppAnidadaController appAnidadaController;
+
 
     public AppController() {
     }
@@ -64,24 +73,21 @@ public class AppController implements Initializable {
 
 
     @FXML
-    protected void vista1() {
-        ventana.setBackground(new Background(
-                new BackgroundImage(
-                        new Image("Vista1.jpg", ventana.getWidth(), ventana.getHeight(), false, true),
-                        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
-                        BackgroundSize.DEFAULT)));
-        desplegacion();
-    }
+    private void vistaDetalle() throws IOException {
+        FXMLLoader loader = new FXMLLoader(AppAnidadaController.class.getResource("AppAnidada.fxml"));
+        Parent root = loader.load();
 
-    @FXML
-    protected void vista2() {
-        ventana.setBackground(new Background(
-                new BackgroundImage(
-                        new Image("Vista2.jpg", ventana.getWidth(), ventana.getHeight(), false, true),
-                        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
-                        BackgroundSize.DEFAULT)));
-        desplegacion();
+        appAnidadaController = loader.getController();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Creo que no habia que abrir otra ventana xDDDDDDDD");
+        stage.show();
+
 
     }
+
+
 }
 

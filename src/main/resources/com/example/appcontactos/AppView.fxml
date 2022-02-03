@@ -8,12 +8,12 @@
    <children>
       <VBox fx:id="vBoxCentral" maxWidth="-Infinity" prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="TOP_CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Cargar">
+            <Button fx:id="btnCargar" mnemonicParsing="false" text="Cargar">
                <VBox.margin>
                   <Insets left="23.0" top="150.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Detalle">
+            <Button fx:id="btnDetalle" mnemonicParsing="false" onAction="#vistaDetalle" text="Detalle">
                <VBox.margin>
                   <Insets left="23.0" />
                </VBox.margin>
@@ -21,8 +21,8 @@
          </children></VBox>
       <VBox fx:id="vBoxIzquierda" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="TOP_LEFT">
          <children>
-            <Button fx:id="btnPreferencias" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#vista1" text="Preferencias" />
-            <Button fx:id="btnSalir" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#vista2" text="Salir" />
+            <Button fx:id="btnPreferencias" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Preferencias" />
+            <Button fx:id="btnSalir" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Salir" />
          </children>
          <StackPane.margin>
             <Insets />

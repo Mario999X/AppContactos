@@ -22,7 +22,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         //Locale localizacion = new Locale("es", "ES");
         //ResourceBundle resourceBundle = ResourceBundle.getBundle("src/main/resources/i18n", localizacion);
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("App-View.fxml")); //, resourceBundle
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppView.fxml")); //, resourceBundle
 
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Vaya Putisima Mierda");

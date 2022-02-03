@@ -7,6 +7,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
+
+// CONTROLADOR VISTA ANIDADA
 public class AppAnidadaController {
 
     @FXML
