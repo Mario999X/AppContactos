@@ -5,28 +5,32 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane fx:id="principalAnidada" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appcontactos.AppAnidadaController">
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<StackPane fx:id="principalAnidada" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appcontactos.AppAnidadaController">
    <children>
       <VBox fx:id="vBoxFondo" prefHeight="200.0" prefWidth="100.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <children>
-            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="Flecha" />
+            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="Flecha">
+               <graphic>
+                  <FontIcon iconLiteral="antf-aliwangwang"/>
+               </graphic>
+            </Button>
+
+
          </children>
       </VBox>
-      <VBox fx:id="vBoxCentral" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="CENTER">
+      <VBox fx:id="vBoxCentral" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="CENTER">
          <StackPane.margin>
-            <Insets left="200.0" right="200.0" />
+            <Insets />
          </StackPane.margin>
          <children>
             <ImageView fx:id="imagenContacto" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <VBox.margin>
                   <Insets left="25.0" right="25.0" top="30.0" />
                </VBox.margin>
-               <image>
-                  <Image url="@src/main/resources/Avatar.png" />
-               </image>
             </ImageView>
             <VBox fx:id="vBoxInfo" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>

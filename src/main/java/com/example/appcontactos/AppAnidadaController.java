@@ -38,6 +38,11 @@ public class AppAnidadaController {
     }
 
     @FXML
+    private void añadirPersona(){
+        // Lo de arriba pero... ya se vera<
+    }
+
+    @FXML
     private void volverPrincipal(){
         principalAnidada.setVisible(false);
     }

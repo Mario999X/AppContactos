@@ -88,7 +88,7 @@ public class AppController implements Initializable {
     private void preferenciasMenu(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
-        alert.setTitle("Chilllllll br0");
+        alert.setTitle("Opcional");
         alert.setContentText("Relax");
         alert.showAndWait();
     }

@@ -24,7 +24,9 @@ public class App extends Application {
         //ResourceBundle resourceBundle = ResourceBundle.getBundle("src/main/resources/i18n", localizacion);
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppView.fxml")); //, resourceBundle
 
+
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add("App.css");
         stage.setTitle("Ya no es tan mierda");
         stage.setScene(scene);
         stage.show();
