@@ -23,4 +23,8 @@ public class AppAnidadaController {
     private Label nombreContacto, correoContacto, otrosContacto;
 
 
+    @FXML
+    private void volverPrincipal(){
+        principalAnidada.setVisible(false);
+    }
 }

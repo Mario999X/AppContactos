@@ -25,7 +25,7 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppView.fxml")); //, resourceBundle
 
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Vaya Putisima Mierda");
+        stage.setTitle("Ya no es tan mierda");
         stage.setScene(scene);
         stage.show();
     }

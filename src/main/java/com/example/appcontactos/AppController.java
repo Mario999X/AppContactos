@@ -31,6 +31,8 @@ public class AppController implements Initializable {
     private VBox vBoxIzquierda;
     @FXML
     private StackPane ventana;
+    @FXML
+    private StackPane vistaAnidada;
 
     private AppAnidadaController appAnidadaController;
 
@@ -42,6 +44,8 @@ public class AppController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         vBoxIzquierda.setTranslateX(-100);
         desplegado = false;
+        vistaAnidada.setVisible(false);
+
     }
 
     private void desplegacion() {
@@ -73,18 +77,9 @@ public class AppController implements Initializable {
 
 
     @FXML
-    private void vistaDetalle() throws IOException {
-        FXMLLoader loader = new FXMLLoader(AppAnidadaController.class.getResource("AppAnidada.fxml"));
-        Parent root = loader.load();
+    private void vistaDetalle(){
 
-        appAnidadaController = loader.getController();
-
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.setTitle("Creo que no habia que abrir otra ventana xDDDDDDDD");
-        stage.show();
-
+        vistaAnidada.setVisible(true);
 
     }
 

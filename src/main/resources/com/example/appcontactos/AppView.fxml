@@ -29,5 +29,6 @@
          </StackPane.margin>
       </VBox>
       <Button fx:id="btnMenu" mnemonicParsing="false" onAction="#despliegueTotal" text="Menu" StackPane.alignment="TOP_LEFT" />
+         <fx:include fx:id="vistaAnidada" source=" AppAnidada.fxml" />
    </children>
 </StackPane>
