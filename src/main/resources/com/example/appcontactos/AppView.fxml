@@ -21,8 +21,8 @@
          </children></VBox>
       <VBox fx:id="vBoxIzquierda" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="TOP_LEFT">
          <children>
-            <Button fx:id="btnPreferencias" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Preferencias" />
-            <Button fx:id="btnSalir" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Salir" />
+            <Button fx:id="btnPreferencias" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#preferenciasMenu" text="Preferencias" />
+            <Button fx:id="btnSalir" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#salirApp" text="Salir" />
          </children>
          <StackPane.margin>
             <Insets />

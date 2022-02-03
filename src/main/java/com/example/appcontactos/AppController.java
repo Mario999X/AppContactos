@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
@@ -81,6 +82,20 @@ public class AppController implements Initializable {
 
         vistaAnidada.setVisible(true);
 
+    }
+
+    @FXML
+    private void preferenciasMenu(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Chilllllll br0");
+        alert.setContentText("Relax");
+        alert.showAndWait();
+    }
+
+    @FXML
+    private void salirApp(){
+        System.exit(0);
     }
 
 
