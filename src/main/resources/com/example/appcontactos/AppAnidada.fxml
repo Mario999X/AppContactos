@@ -13,7 +13,7 @@
             <Insets />
          </opaqueInsets>
          <children>
-            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="Flecha">
+            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="Atrás">
                <graphic>
                   <FontIcon iconLiteral="antf-aliwangwang"/>
                </graphic>

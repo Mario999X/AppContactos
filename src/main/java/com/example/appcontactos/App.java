@@ -2,7 +2,6 @@ package com.example.appcontactos;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -26,7 +25,7 @@ public class App extends Application {
 
 
         Scene scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add("App.css");
+        //scene.getStylesheets().add("App.css");
         stage.setTitle("Ya no es tan mierda");
         stage.setScene(scene);
         stage.show();
