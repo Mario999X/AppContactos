@@ -4,8 +4,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
 
-<?import org.kordamp.ikonli.javafx.FontIcon?>
 <StackPane fx:id="principalAnidada" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appcontactos.AppAnidadaController">
    <children>
       <VBox fx:id="vBoxFondo" prefHeight="200.0" prefWidth="100.0">
@@ -13,9 +13,9 @@
             <Insets />
          </opaqueInsets>
          <children>
-            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="Atrás">
+            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="%btnAtras">
                <graphic>
-                  <FontIcon iconLiteral="antf-aliwangwang"/>
+                  <FontIcon iconLiteral="antf-aliwangwang" />
                </graphic>
             </Button>
 

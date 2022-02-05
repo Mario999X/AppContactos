@@ -19,14 +19,15 @@ import java.util.ResourceBundle;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        //Locale localizacion = new Locale("es", "ES");
-        //ResourceBundle resourceBundle = ResourceBundle.getBundle("src/main/resources/i18n", localizacion);
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppView.fxml")); //, resourceBundle
+        Locale spanish = new Locale("es", "ES");
+        Locale english = new Locale("en", "EN");
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("i18n/strings", spanish);
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppView.fxml"), resourceBundle);
 
 
         Scene scene = new Scene(fxmlLoader.load());
         //scene.getStylesheets().add("App.css");
-        stage.setTitle("Ya no es tan mierda");
+        stage.setTitle("El IteliJ de clase me trolea con los idiomas ");
         stage.setScene(scene);
         stage.show();
     }
