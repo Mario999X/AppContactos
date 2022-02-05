@@ -24,9 +24,7 @@ public class AppController implements Initializable {
     @FXML
     private VBox vBoxIzquierda;
     @FXML
-    private StackPane ventana;
-    @FXML
-    private StackPane vistaAnidada;
+    private StackPane vistaPrincipal, vistaAnidada;
 
     private AppAnidadaController appAnidadaController;
 
@@ -42,6 +40,7 @@ public class AppController implements Initializable {
 
     }
 
+    @FXML
     private void desplegacion() {
         animation = new TranslateTransition(Duration.millis(300), vBoxIzquierda);
         animationBtn = new TranslateTransition(Duration.millis(300), btnMenu);
@@ -63,13 +62,6 @@ public class AppController implements Initializable {
         animationBtn.play();
     }
 
-
-    @FXML
-    protected void despliegueTotal() {
-        desplegacion();
-    }
-
-
     @FXML
     private void vistaDetalle(){
 
@@ -81,8 +73,8 @@ public class AppController implements Initializable {
     private void preferenciasMenu(){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
-        alert.setTitle("Opcional");
-        alert.setContentText("Relax");
+        alert.setTitle("Preferencias");
+        alert.setContentText("Idiomas disponibles (cambiable en la clase App.java): Español/Inglés");
         alert.showAndWait();
     }
 
@@ -90,7 +82,6 @@ public class AppController implements Initializable {
     private void salirApp(){
         System.exit(0);
     }
-
 
 }
 
