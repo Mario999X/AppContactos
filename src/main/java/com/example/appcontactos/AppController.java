@@ -3,14 +3,16 @@ package com.example.appcontactos;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
+// CONTROLADOR VISTA PRINCIPAL
 public class AppController implements Initializable {
 
     private boolean desplegado;
@@ -23,6 +25,11 @@ public class AppController implements Initializable {
     private VBox vBoxIzquierda;
     @FXML
     private StackPane ventana;
+    @FXML
+    private StackPane vistaAnidada;
+
+    private AppAnidadaController appAnidadaController;
+
 
     public AppController() {
     }
@@ -31,6 +38,8 @@ public class AppController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         vBoxIzquierda.setTranslateX(-100);
         desplegado = false;
+        vistaAnidada.setVisible(false);
+
     }
 
     private void desplegacion() {
@@ -62,24 +71,26 @@ public class AppController implements Initializable {
 
 
     @FXML
-    protected void vista1() {
-        ventana.setBackground(new Background(
-                new BackgroundImage(
-                        new Image("Vista1.jpg", ventana.getWidth(), ventana.getHeight(), false, true),
-                        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
-                        BackgroundSize.DEFAULT)));
-        desplegacion();
+    private void vistaDetalle(){
+
+        vistaAnidada.setVisible(true);
+
     }
 
     @FXML
-    protected void vista2() {
-        ventana.setBackground(new Background(
-                new BackgroundImage(
-                        new Image("Vista2.jpg", ventana.getWidth(), ventana.getHeight(), false, true),
-                        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
-                        BackgroundSize.DEFAULT)));
-        desplegacion();
-
+    private void preferenciasMenu(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Opcional");
+        alert.setContentText("Relax");
+        alert.showAndWait();
     }
+
+    @FXML
+    private void salirApp(){
+        System.exit(0);
+    }
+
+
 }
 
