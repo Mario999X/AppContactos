@@ -13,7 +13,7 @@
             <Insets />
          </opaqueInsets>
          <children>
-            <Button fx:id="btnFlecha" mnemonicParsing="false" onAction="#volverPrincipal" text="%btnAtras">
+            <Button fx:id="btnAtras" mnemonicParsing="false" onAction="#volverPrincipal" text="%btnAtras">
                <graphic>
                   <FontIcon iconLiteral="antf-aliwangwang" />
                </graphic>
@@ -22,7 +22,7 @@
 
          </children>
       </VBox>
-      <VBox fx:id="vBoxCentral" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #edf4fa;" StackPane.alignment="CENTER">
+      <VBox fx:id="vBoxCentral" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ccf5ff;" StackPane.alignment="CENTER">
          <StackPane.margin>
             <Insets />
          </StackPane.margin>

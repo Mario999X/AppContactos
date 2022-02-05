@@ -19,7 +19,7 @@ public class AppAnidadaController {
     @FXML
     private VBox vBoxFondo, vBoxCentral, vBoxInfo;
     @FXML
-    private Button btnFlecha;
+    private Button btnAtras;
     @FXML
     private ImageView imagenContacto;
     @FXML
@@ -37,10 +37,10 @@ public class AppAnidadaController {
 
     }
 
+    /*
     @FXML
-    private void añadirPersona(){
-        // Lo de arriba pero... ya se vera<
-    }
+    private void añadirPersona(){}
+     */
 
     @FXML
     private void volverPrincipal(){
