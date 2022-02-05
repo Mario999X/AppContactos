@@ -22,7 +22,7 @@ public class App extends Application {
 
         Scene scene = new Scene(fxmlLoader.load());
         //scene.getStylesheets().add("App.css");
-        stage.setTitle("El InteliJ de clase me trolea con los idiomas");
+        stage.setTitle("El IntelliJ de clase me trolea con los idiomas");
         stage.setScene(scene);
         stage.show();
     }
